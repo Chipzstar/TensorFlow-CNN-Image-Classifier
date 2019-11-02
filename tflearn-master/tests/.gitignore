@@ -1,5 +1,0 @@
-test*.tflearn
-test*.tflearn.meta
-*~
-checkpoint
-mnist
