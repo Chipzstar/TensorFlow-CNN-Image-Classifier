@@ -1,4 +1,5 @@
 import os
+import sys
 from tqdm import tqdm
 import bz2
 import argparse
@@ -48,7 +49,9 @@ if __name__ == "__main__":
         
     landmarks_detector = LandmarksDetector(landmarks_model_path)
     for img_name in tqdm(os.listdir(RAW_IMAGES_DIR)):
-        if os.path.isfile(os.path.join(ALIGNED_IMAGES_DIR, img_name)):
+        full_path = os.path.join(ALIGNED_IMAGES_DIR, img_name)
+        print(full_path)
+        if os.path.exists(full_path):
             print(f"{img_name} already exists!")
             continue
         print('Aligning %s ...' % img_name)
