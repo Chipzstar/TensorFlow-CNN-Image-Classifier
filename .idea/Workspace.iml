@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.6 (TensorFlow 2.0)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="data" />
+    <orderEntry type="module" module-name="data" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_FOLDERS">
