@@ -51,9 +51,6 @@ if __name__ == "__main__":
     for img_name in os.listdir(RAW_IMAGES_DIR):
         full_path = os.path.join(ALIGNED_IMAGES_DIR, img_name)
         print(full_path)
-        if os.path.exists(full_path):
-            print(f"{img_name} already exists!")
-            continue
         print('Aligning %s ...' % img_name)
         try:
             raw_img_path = os.path.join(RAW_IMAGES_DIR, img_name)
