@@ -58,7 +58,7 @@ def get_model_name():
     response = input(f"Use previous model name: {MODEL_NAME}? y/n")
     if response == 'y' or response == 'Y':
         return MODEL_NAME
-    return input("Enter name of new model: ")
+    return input("Enter name of new model: ").title()
 
 
 def find_list_items(soup2):
