@@ -36,7 +36,6 @@ $(aws ecr get-login --region ${region} --no-include-email --registry-ids=7631043
 # docker tag ${docker_image}:latest ${fullname}
 
 # Pull docker image for tensorflow 2.0 GPU inference 
-
 image_url="763104351884.dkr.ecr.${region}.amazonaws.com/tensorflow-inference:2.0.0-gpu-py36-cu100-ubuntu18.04"
 
 docker pull ${image_url}
