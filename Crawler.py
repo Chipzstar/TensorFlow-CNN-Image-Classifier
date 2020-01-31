@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from bs4 import BeautifulSoup
-import requests as req
-import os, re
+import os
+import re
 import numpy as np
+import requests as req
+from bs4 import BeautifulSoup
 
 #%%
 
