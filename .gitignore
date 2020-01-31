@@ -1,5 +1,5 @@
-logs/
+logs/*
 *.npy
-.idea/
+.idea/*
 _internal
 _pycache
