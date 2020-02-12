@@ -63,10 +63,10 @@ def get_model_name():
 
 
 def find_list_items(soup2):
-    locator = "div#wrapper div#content div#main ul#tiles li.thumbwook a" # CSS Selector
+    locator = "div#wrapper div#content div#main ul#tiles li.thumbwook a"  # CSS Selector
 
-    images = soup2.select(locator) # selects all items found in the locator
-    image_links = [image.attrs['href'] for image in images] # selects the 'href' attribute value
+    images = soup2.select(locator)  # selects all items found in the locator
+    image_links = [image.attrs['href'] for image in images]  # selects the 'href' attribute value
     return image_links
 
 
