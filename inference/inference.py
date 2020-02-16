@@ -51,11 +51,11 @@ def input_handler(data, context):
     if context.request_content_type == 'application/x-image':
         print(f"Base64 image: {data}")
         payload = data.read()
-        print(f"Payload: {payload})
-        encoded_image = base64.b64encode(payload).decode('utf-8')
-        print(f"Encoded Image: {encoded_image}")
-        instance = [{"b64": encoded_image}]
-        return json.dumps({"instances": instance})
+        print(f"Payload: {payload}")
+        # encoded_image = base64.b64encode(payload).decode('utf-8')
+        # print(f"Encoded Image: {encoded_image}")
+        # instance = [{"b64": encoded_image}]
+        return json.dumps({"instances": payload})
     else:
         _return_error(415, 'Unsupported content type "{}"'.format(context.request_content_type or 'Unknown'))
 
